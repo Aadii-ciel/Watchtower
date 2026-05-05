@@ -1,0 +1,358 @@
+{
+  "abc news": {
+    "source": "ABC News",
+    "owner": "The Walt Disney Company",
+    "type": "Corporate",
+    "bias": "Left-Center",
+    "description": "ABC News is the news division of the American Broadcasting Company, which is wholly owned by the massive entertainment conglomerate The Walt Disney Company. It is primarily driven by advertising revenue.",
+    "funding_sources": [
+      {
+        "name": "Advertising \u0026 Corporate Revenue",
+        "percentage": 100
+      }
+    ]
+  },
+  "abc news australia": {
+    "source": "ABC News Australia",
+    "owner": "Australian Broadcasting Corporation (ABC)",
+    "type": "State-Owned",
+    "bias": "Least Biased",
+    "description": "ABC News Australia operates as the news division of the Australian Broadcasting Corporation, a public service broadcaster. Its business model is centered on providing independent news and information to the Australian public, funded primarily through government appropriations. It does not rely on advertising or subscription fees for its core operations.",
+    "funding_sources": [
+      {
+        "name": "State Funding (Australian Government)",
+        "percentage": 99
+      },
+      {
+        "name": "Other Revenue (e.g., content sales, interest)",
+        "percentage": 1
+      }
+    ]
+  },
+  "al jazeera": {
+    "source": "Al Jazeera",
+    "owner": "State of Qatar (via Al Jazeera Media Network)",
+    "type": "State-Owned",
+    "bias": "Pro-Qatar",
+    "description": "Al Jazeera Media Network operates as a global news organization with its primary funding derived directly from the Qatari government. This state-backed model allows it to maintain extensive international operations without significant reliance on commercial advertising or subscription revenues. While enabling broad reach, this funding structure often leads to scrutiny regarding its editorial independence and alignment with Qatari foreign policy interests.",
+    "funding_sources": [
+      {
+        "name": "State Funding (Government of Qatar)",
+        "percentage": 95
+      },
+      {
+        "name": "Advertising and Commercial Activities",
+        "percentage": 5
+      }
+    ]
+  },
+  "aljazeera english": {
+    "source": "Al Jazeera English",
+    "owner": "Al Jazeera Media Network (Government of Qatar)",
+    "type": "State-Owned",
+    "bias": "Mixed / Qatari State Lean",
+    "description": "Al Jazeera is fully funded by the Qatari government. While it maintains editorial independence in many areas, its coverage of Middle Eastern politics often aligns with Qatari state interests.",
+    "funding_sources": [
+      {
+        "name": "State Funding (Qatar)",
+        "percentage": 100
+      }
+    ]
+  },
+  "bbc world": {
+    "source": "BBC World",
+    "owner": "British Broadcasting Corporation (BBC)",
+    "type": "State-Owned",
+    "bias": "Least Biased",
+    "description": "BBC World News (the international television channel) and BBC.com are commercial operations of the British Broadcasting Corporation, managed by BBC Global News Ltd. They operate on a for-profit basis, generating revenue primarily through advertising and carriage fees from international broadcasters and platforms, rather than the UK license fee.",
+    "funding_sources": [
+      {
+        "name": "Advertising",
+        "percentage": 50
+      },
+      {
+        "name": "Subscription/Carriage Fees",
+        "percentage": 40
+      },
+      {
+        "name": "Commercial Sales/Content Licensing",
+        "percentage": 10
+      }
+    ]
+  },
+  "cna (channel news asia)": {
+    "source": "CNA (Channel News Asia)",
+    "owner": "Temasek Holdings (via Mediacorp)",
+    "type": "State-Owned",
+    "bias": "Least Biased",
+    "description": "CNA operates as a commercial news network under Mediacorp, which is wholly owned by Temasek Holdings, a sovereign wealth fund of the Singaporean government. Its business model relies on a combination of advertising revenue from its broadcast and digital platforms, supplemented by strategic funding and investment from its state-owned parent company to support its regional news coverage and operations.",
+    "funding_sources": [
+      {
+        "name": "State Funding (via Temasek Holdings/Mediacorp)",
+        "percentage": 55
+      },
+      {
+        "name": "Advertising",
+        "percentage": 40
+      },
+      {
+        "name": "Content Licensing \u0026 Syndication",
+        "percentage": 5
+      }
+    ]
+  },
+  "defense news": {
+    "source": "Defense News",
+    "owner": "Regent, L.P.",
+    "type": "Corporate",
+    "bias": "Least Biased",
+    "description": "Defense News operates as a business-to-business (B2B) publication serving the global defense industry. Its business model primarily relies on providing specialized news, analysis, and insights to defense professionals, policymakers, and contractors. Funding is generated through a combination of subscriptions for premium content, advertising from defense-related companies, and revenue from industry events and custom content.",
+    "funding_sources": [
+      {
+        "name": "Subscriptions",
+        "percentage": 40
+      },
+      {
+        "name": "Advertising",
+        "percentage": 40
+      },
+      {
+        "name": "Events \u0026 Custom Content",
+        "percentage": 20
+      }
+    ]
+  },
+  "dw news": {
+    "source": "DW News",
+    "owner": "Deutsche Welle (German Public Broadcaster)",
+    "type": "State-Funded Public Broadcaster",
+    "bias": "Least Biased / Pro-Democracy",
+    "description": "Deutsche Welle is Germany's public international broadcaster. It is funded by the German federal tax budget but operates under an independent board to ensure journalistic independence from the government.",
+    "funding_sources": [
+      {
+        "name": "German Federal Tax Budget",
+        "percentage": 100
+      }
+    ]
+  },
+  "foreign policy": {
+    "source": "Foreign Policy",
+    "owner": "Foreign Policy Group (privately held)",
+    "type": "Corporate",
+    "bias": "Center",
+    "description": "Foreign Policy operates on a hybrid business model, primarily generating revenue through digital subscriptions for its in-depth analysis and reporting on global affairs. It also relies on advertising, including sponsored content, and hosts various events and conferences to engage its audience and create additional revenue streams.",
+    "funding_sources": [
+      {
+        "name": "Subscriptions",
+        "percentage": 45
+      },
+      {
+        "name": "Advertising (Display \u0026 Sponsored Content)",
+        "percentage": 30
+      },
+      {
+        "name": "Events \u0026 Custom Content",
+        "percentage": 25
+      }
+    ]
+  },
+  "fox news": {
+    "source": "Fox News",
+    "owner": "Fox Corporation",
+    "type": "Corporate / Billionaire Influenced",
+    "bias": "Right / Conservative",
+    "description": "Fox News is owned by Fox Corporation, which is heavily controlled by the Murdoch family. It generates revenue through cable subscriber fees and advertising.",
+    "funding_sources": [
+      {
+        "name": "Cable Subscriber Fees",
+        "percentage": 60
+      },
+      {
+        "name": "Advertising Revenue",
+        "percentage": 40
+      }
+    ]
+  },
+  "india today": {
+    "source": "India Today",
+    "owner": "Living Media India Limited (part of the India Today Group)",
+    "type": "Corporate",
+    "bias": "Center-Right",
+    "description": "India Today operates across print, television (Aaj Tak, India Today TV), and digital platforms. Their business model primarily relies on generating revenue through advertising sales across their various media properties, supplemented by subscriptions and newsstand sales for their magazines and digital content.",
+    "funding_sources": [
+      {
+        "name": "Advertising",
+        "percentage": 65
+      },
+      {
+        "name": "Subscriptions \u0026 Sales (Print/Digital)",
+        "percentage": 25
+      },
+      {
+        "name": "Other Ventures (Events, Content Syndication)",
+        "percentage": 10
+      }
+    ]
+  },
+  "nbc news": {
+    "source": "NBC News",
+    "owner": "NBCUniversal (Comcast)",
+    "type": "Corporate",
+    "bias": "Left-Center",
+    "description": "NBC News is a division of NBCUniversal, which is owned by Comcast, one of the world's largest telecommunications conglomerates.",
+    "funding_sources": [
+      {
+        "name": "Advertising \u0026 Corporate Revenue",
+        "percentage": 100
+      }
+    ]
+  },
+  "ndtv": {
+    "source": "NDTV",
+    "owner": "AMG Media Networks (Adani Group)",
+    "type": "Corporate / Billionaire Owned",
+    "bias": "Center-Right",
+    "description": "NDTV is an Indian news media company recently acquired by the Adani Group, a massive conglomerate controlled by billionaire Gautam Adani. The acquisition has raised concerns about editorial independence.",
+    "funding_sources": [
+      {
+        "name": "Corporate Funding / Advertising",
+        "percentage": 100
+      }
+    ]
+  },
+  "ndtv 24x7": {
+    "source": "NDTV 24x7",
+    "owner": "AMG Media Networks (Adani Group)",
+    "type": "Corporate / Billionaire Owned",
+    "bias": "Center-Right",
+    "description": "NDTV is an Indian news media company recently acquired by the Adani Group, a massive conglomerate controlled by billionaire Gautam Adani. The acquisition has raised concerns about editorial independence.",
+    "funding_sources": [
+      {
+        "name": "Corporate Funding / Advertising",
+        "percentage": 100
+      }
+    ]
+  },
+  "politico": {
+    "source": "Politico",
+    "owner": "Axel Springer SE",
+    "type": "Corporate",
+    "bias": "Least Biased",
+    "description": "Politico's business model primarily revolves around providing in-depth political news and analysis. A significant portion of its revenue comes from its premium subscription service, Politico Pro, which offers specialized policy coverage to professionals. Additionally, it generates revenue through traditional advertising, sponsored content, and hosting various events and conferences.",
+    "funding_sources": [
+      {
+        "name": "Subscriptions (Politico Pro)",
+        "percentage": 45
+      },
+      {
+        "name": "Advertising",
+        "percentage": 30
+      },
+      {
+        "name": "Events and Sponsorships",
+        "percentage": 20
+      },
+      {
+        "name": "Other (e.g., licensing)",
+        "percentage": 5
+      }
+    ]
+  },
+  "sky news": {
+    "source": "Sky News",
+    "owner": "Comcast Corporation",
+    "type": "Corporate",
+    "bias": "Least Biased",
+    "description": "Sky News operates as a division of Sky Group, which is wholly owned by Comcast Corporation. It functions as a key component of Sky's broader media offerings, providing 24-hour news coverage that enhances the value of Sky's subscription packages. Its funding primarily stems from direct investment by its parent company, supplemented by advertising revenue generated across its broadcast and digital platforms.",
+    "funding_sources": [
+      {
+        "name": "Parent Company Investment (from Sky Group's overall revenue, primarily subscriptions and advertising)",
+        "percentage": 70
+      },
+      {
+        "name": "Advertising",
+        "percentage": 25
+      },
+      {
+        "name": "Digital Revenue",
+        "percentage": 5
+      }
+    ]
+  },
+  "the guardian": {
+    "source": "The Guardian",
+    "owner": "Scott Trust Limited",
+    "type": "Independent",
+    "bias": "Left-Center",
+    "description": "The Guardian operates on a unique model, offering most of its content free online while relying heavily on voluntary reader contributions and digital subscriptions for premium features. This is supplemented by advertising revenue and income from other commercial ventures, all overseen by the Scott Trust to ensure editorial independence.",
+    "funding_sources": [
+      {
+        "name": "Reader Contributions \u0026 Subscriptions",
+        "percentage": 55
+      },
+      {
+        "name": "Advertising",
+        "percentage": 27
+      },
+      {
+        "name": "Other Commercial Activities",
+        "percentage": 18
+      }
+    ]
+  },
+  "the hindu": {
+    "source": "The Hindu",
+    "owner": "The Hindu Group (Kasturi and Sons Limited)",
+    "type": "Independent / Family Owned",
+    "bias": "Left-Center",
+    "description": "The Hindu is one of India's oldest English-language daily newspapers. It is known for its independent and often critical editorial stance, funded primarily through subscriptions and advertising.",
+    "funding_sources": [
+      {
+        "name": "Advertising",
+        "percentage": 60
+      },
+      {
+        "name": "Subscriptions & Sales",
+        "percentage": 40
+      }
+    ]
+  },
+  "times of india": {
+    "source": "Times of India",
+    "owner": "Bennett, Coleman and Company Limited (The Times Group)",
+    "type": "Corporate",
+    "bias": "Center-Right",
+    "description": "The Times of India is a massive corporate-owned media entity, focusing heavily on advertising revenue, sensationalism, and high readership. It generally aligns with the ruling establishment.",
+    "funding_sources": [
+      {
+        "name": "Advertising & Corporate",
+        "percentage": 85
+      },
+      {
+        "name": "Subscriptions & Sales",
+        "percentage": 15
+      }
+    ]
+  },
+  "wion": {
+    "source": "WION",
+    "owner": "Zee Media Corporation Limited",
+    "type": "Corporate",
+    "bias": "Center-Right",
+    "description": "WION (World Is One News) is an Indian international news channel owned by Zee Media Corporation Limited, a major Indian media conglomerate. Its business model primarily relies on advertising revenue generated from its broadcast and digital platforms, supplemented by distribution fees from cable and satellite providers.",
+    "funding_sources": [
+      {
+        "name": "Advertising",
+        "percentage": 60
+      },
+      {
+        "name": "Subscription/Distribution Fees",
+        "percentage": 30
+      },
+      {
+        "name": "Digital Revenue",
+        "percentage": 10
+      }
+    ]
+  }
+}

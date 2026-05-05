@@ -1,0 +1,124 @@
+version: 2
+
+before:
+  hooks:
+    - go mod tidy
+    - go generate ./...
+
+builds:
+  - id: watchtower
+    binary: watchtower
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    ignore:
+      - goos: windows
+        goarch: arm64
+    ldflags:
+      - -s -w
+      - -X main.version={{.Version}}
+      - -X main.commit={{.Commit}}
+      - -X main.date={{.Date}}
+
+archives:
+  - id: watchtower
+    formats: [tar.gz]
+    # this name template makes the OS and Arch compatible with the results of `uname`.
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- title .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+    # use zip for windows archives
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files:
+      - README.md
+      - LICENSE
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^ci:"
+      - Merge pull request
+      - Merge branch
+
+release:
+  github:
+    owner: lajosdeme
+    name: watchtower
+  draft: false
+  prerelease: auto
+
+brews:
+  - name: watchtower
+    ids:
+      - watchtower
+    repository:
+      owner: lajosdeme
+      name: homebrew-watchtower
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: Formula
+    homepage: "https://github.com/lajosdeme/watchtower"
+    description: "A clean, minimal, terminal-based global intelligence dashboard."
+    license: "MIT"
+    test: 
+      "#{bin}/watchtower --version"
+    install: |
+      bin.install "watchtower"
+  
+scoops:
+  - ids:
+      - watchtower
+    repository:
+      owner: lajosdeme
+      name: scoop-watchtower
+      token: "{{ .Env.SCOOP_BUCKET_GITHUB_TOKEN }}"
+    directory: bucket
+    homepage: "https://github.com/lajosdeme/watchtower"
+    description: "A clean, minimal, terminal-based global intelligence dashboard."
+    license: "MIT"
+
+nfpms:
+  - id: watchtower
+    package_name: watchtower
+    homepage: "https://github.com/lajosdeme/watchtower"
+    maintainer: "Lajos Deme <l@deme.ventures>"
+    description: "A clean, minimal, terminal-based global intelligence dashboard."
+    license: "MIT"
+    formats:
+      - deb
+      - rpm
+      - apk
+
+aurs:
+  - name: watchtower-bin
+    homepage: "https://github.com/lajosdeme/watchtower"
+    description: "A clean, minimal, terminal-based global intelligence dashboard."
+    maintainers:
+      - "Lajos Deme <l@deme.ventures>"
+    license: MIT
+    private_key: "{{ .Env.AUR_KEY }}"
+    git_url: "ssh://aur@aur.archlinux.org/watchtower-bin.git"
+    skip_upload: auto
+    provides:
+      - watchtower
+    conflicts:
+      - watchtower
+    package: |-
+      install -Dm755 "./watchtower" "${pkgdir}/usr/bin/watchtower"
